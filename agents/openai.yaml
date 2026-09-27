@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Brief"
+  short_description: "From DIY and hobbies to science: multi-source research with verified, cited answers"
+  default_prompt: "Use $research-brief: research my question across websites, Reddit, YouTube, Telegram, other social networks and topic-appropriate sources in several languages, check the sources, explain unfamiliar steps, and give a clear answer with links and confidence levels."
