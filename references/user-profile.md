@@ -12,6 +12,7 @@ This file is the only place for personal preferences. The rest of the skill is g
 | Excluded sources | | None |
 | Preferred general search engine | | Whatever search tool is available; optionally DuckDuckGo `kl=wt-wt` via browser |
 | Signed-in services the agent may read with (browser) | | None assumed; discover at run time |
+| NotebookLM (plan; may create notebooks and add sources) | | Not used |
 | Institutional / library access | | None assumed |
 | Where to save long reports | | Chat reply for short answers; a Markdown file or the host's document format for long ones |
 | Anything else (tone, units, country for prices/availability) | | Infer from conversation |
@@ -24,6 +25,7 @@ Extra search languages: Russian, English
 Default depth tier: Standard
 Mandatory channels: Reddit, YouTube, Telegram
 Signed-in services: Telegram Web and YouTube in the agent's browser (read-only use)
+NotebookLM: Pro plan — may create research notebooks and add sources
 Institutional access: university network — ScienceDirect, Springer (via browser session)
 Country for prices/availability: Germany
 ```
@@ -32,5 +34,5 @@ Country for prices/availability: Germany
 
 - Preferences here are defaults; the current request always wins.
 - A listed sign-in or subscription is a *reported* capability. Verify at run time; never claim access that was not observed.
-- Signed-in services authorize reading and searching only — never posting, messaging, reacting, joining, buying, or changing settings.
+- Signed-in services authorize reading and searching only — never posting, messaging, reacting, joining, buying, or changing settings. The one exception is NotebookLM when enabled here: the agent may create its own notebooks and add sources, within the limits in notebooklm.md.
 - Do not infer the user's profession, discipline, or interests from this file beyond what it states.

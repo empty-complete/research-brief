@@ -105,6 +105,7 @@ Output language: English
 Extra search languages: German, Russian
 Mandatory channels: Reddit, YouTube, Telegram
 Signed-in services: YouTube and Telegram Web in the agent's browser (read-only)
+NotebookLM: Pro plan — may create research notebooks and add sources
 Institutional access: university network — ScienceDirect, Springer
 Country for prices/availability: Germany
 ```
@@ -157,6 +158,10 @@ You get a short brief with links and confidence levels, then a guide, comparison
 
 If your agent can drive your own browser (Claude in Chrome, a built-in browser pane, Playwright with your profile), list the services you're signed in to in the profile. The skill uses them **read-only** — it never posts, messages, reacts, joins groups or channels, buys, or changes settings.
 
+### NotebookLM (optional)
+
+If you enable NotebookLM in the profile, the skill uses it for bulk reading: it creates a notebook per research task, adds the YouTube videos, pages and PDFs it found, asks narrow questions across all of them, and then checks every load-bearing claim in the original source. NotebookLM's answers are treated as leads, not evidence; the report cites the videos and pages themselves. The notebook stays in your account so you can keep asking questions. The skill never deletes or shares notebooks and does not touch your other notebooks.
+
 ### Telegram
 
 Works without any setup: public channels via `https://t.me/s/<channel>` (with `?q=` search inside a channel) and discovery through [TGStat](https://tgstat.ru/). A signed-in Telegram Web session adds global search and comments.
@@ -178,6 +183,7 @@ research-brief/
     ├── quality-and-verification.md  # SIFT, source labels, registry, confidence, critique loop
     ├── social-and-media.md          # Reddit, YouTube, TikTok, Instagram, Facebook, forums, images
     ├── telegram.md                  # t.me/s previews, TGStat, Telegram Web, MCP
+    ├── notebooklm.md                # optional bulk reading of videos/sources in NotebookLM
     ├── everyday-and-creative.md     # crafts, DIY, hobbies, how-to guides
     ├── method-breakdown.md          # recursive explanation of methods and dependencies
     ├── scientific.md                # literature search, appraisal, evidence tables

@@ -18,7 +18,7 @@ Keep this quick for low-stakes everyday tasks; do it carefully for health, money
 In the registry, give each source:
 
 - **Type**: `official` (maker, standard, regulator, docs) · `academic` (peer-reviewed, preprint — say which) · `expert-practitioner` (demonstrated hands-on expertise) · `journalism` · `industry/vendor` · `community` (Reddit, forums, comments) · `social-video` (YouTube, TikTok, Instagram, Facebook) · `archive` · `other`.
-- **Access level**: full text read · partial · abstract only · metadata/snippet only · video watched/transcript only · archived copy.
+- **Access level**: full text read · partial · abstract only · metadata/snippet only · video watched/transcript only · via NotebookLM (cited passage checked / answer only — see notebooklm.md) · archived copy.
 - **Date** (publication and, for time-sensitive claims, the "as of" date of the fact).
 - **Evidence family**: which other sources it depends on (same study, same press release, reposted clip).
 - **Interest**: sells the product, funded by party X, affiliate links, none known.
