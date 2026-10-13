@@ -39,7 +39,9 @@
 | **Everyday questions are first-class** | Crafts, DIY, hobbies and purchases get the same rigor as science — without forcing academic framing on them |
 | **Explains "down to atoms"** | When a source recommends a method, tool or material, the skill researches *that* too: what it is, why it fits, prerequisites, steps, how to check the result |
 | **Depth tiers** | Quick / Standard / Deep / Exhaustive with rough tool-call budgets, so simple questions stay fast |
-| **Broad, multilingual search** | Web, Reddit, YouTube, Telegram, TikTok, Instagram, Facebook, forums, scholarly databases, archives — in the languages the topic actually lives in |
+| **Broad, multilingual search** | Web, Reddit, YouTube, Telegram, TikTok, Instagram, Facebook, X/Twitter, Threads, forums, scholarly databases, archives — in the languages the topic actually lives in |
+| **Verified calculations** | Check arithmetic, units and assumptions; prepare formulas for a supported Telegram rich renderer when requested |
+| **Optional assistant integration** | Use explicitly configured external settings, including Obsidian, while remaining usable without the personal-assistant plugin |
 | **Evidence registry** | Every source labelled by type, access level, date, evidence family and conflicts of interest; only registered sources may be cited, URLs only from pages actually opened |
 | **SIFT / lateral reading** | Unfamiliar sources are checked from the outside; freshness checks for fast-moving facts; no single source may carry the whole answer |
 | **Critique loop** | The draft is reviewed as a skeptic, a beginner doing it tomorrow, a domain expert and a reader from another region; gaps become follow-up searches |
@@ -111,6 +113,8 @@ Country for prices/availability: Germany
 ```
 
 Never put passwords, API keys, cookies or tokens in the profile.
+
+Keep personal preferences in a private local copy or configure an external settings file. With personal-assistant, use its existing vault settings and permissions; the standalone skill does not require that plugin. A synced Obsidian vault does not supply web search or browser sessions: tools are checked on the current host. Research and calculation requests do not automatically create tasks or authorize sending messages.
 
 ### 2. Ask a question
 

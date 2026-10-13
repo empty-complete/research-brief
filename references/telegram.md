@@ -55,3 +55,9 @@ The session is the user's personal account. Research authorizes reading and sear
 ## Citing
 
 Cite the post permalink `https://t.me/<channel>/<post_id>` (works for public channels; for web.telegram.org-only content, give channel name, date, and post number). Paraphrase; quotes short and rare. In the coverage table add a Telegram row: route used (preview / TGStat / Telegram Web / MCP), channels searched, and outcome.
+
+## Preparing calculations for a rich renderer
+
+When the user requests a Telegram-ready result and the host provides the personal-assistant rich sender or a renderer documented to use the same syntax, use `\(E = mc^2\)` for inline formulas and `\[E = mc^2\]` or `$$E = mc^2$$` on a separate line for a block. For multiline formulas, put the opening and closing `\[` / `\]` or `$$` delimiters on separate lines. In the text passed to this sender, each delimiter has one literal backslash; a JSON string may need escaping, but do not double backslashes in a text file. Other renderers may require different syntax, so check the host's contract. Single `$` characters remain text in this sender, preserving prices; empty or unclosed math blocks are invalid. Full LaTeX documents, packages, and arbitrary HTML are not supported by this format.
+
+The sender converts these expressions to native `tg-math` / `tg-math-block`; this does not calculate or validate them. Verify arithmetic and units separately with available code execution, state assumptions and rounding, and distinguish estimates from exact results. If no compatible renderer is available, provide a readable formula without claiming native rich rendering. Preparing text does not authorize sending it; delivery uses the host's separately authorized workflow.

@@ -5,6 +5,16 @@ description: Find and explain how to do things, from everyday questions, crafts,
 
 # Research Brief
 
+## Host integration and calculations
+
+This skill works independently of the personal-assistant plugin and includes all its research references. When used inside an assistant, follow the host's existing permissions and the user's explicitly configured external settings (for example, an Obsidian vault); see [references/user-profile.md](references/user-profile.md). Keep personal settings outside the distributed package. Without an external profile, use the generic defaults and the current request; do not invent personal facts or require an assistant installation.
+
+A research question or calculation requests an answer; it does not automatically authorize creating tasks, deadlines, Inbox entries, or changing existing notes. Save requested reports through the host's supported artifact or vault workflow, preserving existing content.
+
+For calculations, verify arithmetic with available code execution, state units and assumptions, and distinguish an exact result from an estimate. A calculation using only supplied numbers needs no web or social search; research factual inputs when the answer depends on external evidence. Formatting does not validate mathematics. For a Telegram rich renderer, use its supported explicit LaTeX delimiters per [references/telegram.md](references/telegram.md); preparing a result does not authorize sending it. Show citations as useful source links; generated illustrations are not evidence.
+
+Research tools depend on the current host. On a server, Obsidian Headless synchronizes vault files; it does not supply web search, browser sign-ins, image generation, or speech recognition. Check available tools at runtime and disclose missing access without claiming the service is connected.
+
 Find the evidence needed to answer the user's question, expand beyond the first search results, check it, and explain what is supported, disputed, or unknown — down to steps the user can actually carry out. Answer in the language of the user's request unless the user profile or the request says otherwise. Search languages are independent of output language.
 
 This is a general-purpose research and explanation skill. Everyday, playful, aesthetic, and hobby questions are first-class uses. Do not default to academic framing because the user has institutional access or previously asked scientific questions. Match the current goal; a simple-sounding craft question may still need substantial practical investigation.
@@ -13,7 +23,7 @@ This is a general-purpose research and explanation skill. Everyday, playful, aes
 
 | File | Read when |
 | --- | --- |
-| [references/user-profile.md](references/user-profile.md) | **Every task, first** (short): the user's personal defaults, if filled in — output language, channels, sign-ins, access. The current request always overrides it. |
+| [references/user-profile.md](references/user-profile.md) | **Every task, first** (short): generic defaults and any explicitly configured external personal settings — output language, channels, sign-ins, access. The current request always overrides them. |
 | [references/depth-and-orchestration.md](references/depth-and-orchestration.md) | **Every task** (short): date anchor, depth tier, planning, broad→narrow queries, comparison matrix, subagents, stopping. |
 | [references/quality-and-verification.md](references/quality-and-verification.md) | **Every task**: SIFT, source labels, evidence registry, confidence, critique loop, final verification. Apply lightly for Quick tier. |
 | [references/social-and-media.md](references/social-and-media.md) | Every task: Reddit/YouTube coverage and how to read social media, video, images. |
